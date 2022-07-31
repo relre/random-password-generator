@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a Random Password - relre.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://relre.dev/randompw/rpw-logo.ico">
+    <meta property="og:site_name" content="relre.dev" />
+    <meta property=“og:title” content="Generate a Random Password - relre.dev" />
+    <meta property="og:description" content="Generate secure, random passwords to stay safe online." />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://relre.dev/randompw/rpw-logo.png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-3 col-s-4"></div>
+      <div class="col-6 col-s-4">
+        <div class="logo">
+            <a href="https://relre.dev"><img src="https://relre.dev/randompw/rpw-logo.png"></a>
+        </div>
+        
+        <h1>Generate a <strong>random password</strong>
+        </h1>
+        <p>Generate secure, random passwords to stay safe online.</p>
+        <div class="slidecontainer">
+          <div class="pw-lenght">Password lenght: <span id="rangeOutput"></span>
+          </div>
+          <input type="range" min="1" max="50" value="15" class="slider" id="pwRange">
+        </div>
+        <label class="container">Numbers <input id="numbers" type="checkbox" checked>
+          <span class="mark"></span>
+        </label>
+        <label class="container">Symbols <input id="symbols" type="checkbox" checked>
+          <span class="mark"></span>
+        </label>
+        <button onclick="generatePassword()">Generate Password</button>
+        <hr>
+      </div>
+      <div class="col-3 col-s-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-3 col-s-4"></div>
+      <div class="col-6 col-s-4 text-center">
+        <input type="text" onclick="copyFu()" value="Hello World" id="pwInput">
+      </div>
+      <div class="col-3 col-s-4"></div>
+    </div>
+    <footer>
+        <a target="_blank" href="https://relre.dev/">relre.dev</a> 
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
